@@ -92,7 +92,7 @@ public class TestController {
      */
     @RequestMapping("/bool")
     @ResponseBody
-    public Object bool( Boolean bool) {
-        return CommonReturnType.create(bool.toString());
+    public Object bool( Boolean bool1) {
+        return CommonReturnType.create(bool1.toString());
     }
 }
