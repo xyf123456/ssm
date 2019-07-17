@@ -83,4 +83,16 @@ public class TestController {
     public void initStudent(WebDataBinder binder){
         binder.setFieldDefaultPrefix("student.");
     }
+
+    /**
+     * @Description:Boolean类型
+     * @param: [bool]
+     * @return: java.lang.Object
+     * @Date: 2019/07/17 13:24
+     */
+    @RequestMapping("/bool")
+    @ResponseBody
+    public Object bool( Boolean bool) {
+        return CommonReturnType.create(bool.toString());
+    }
 }
